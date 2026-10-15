@@ -1,16 +1,39 @@
-# React + Vite
+# Digital Business Card
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A responsive personal business card web app built with React. It shows my photo, name, role, contact buttons, About and Interests sections and social links, with a dark/light theme toggle.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Built with
 
-## React Compiler
+- React (Vite)
+- JSX
+- CSS3 (CSS Variables, Flexbox)
+- NPM Packages (`react-icons`, `@fontsource/inter`)
+- Netlify (Hosting)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the Oxlint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+- Dark and light themes switched with a toggle button, using CSS variables and a `data-theme` attribute
+- Theme choice saved in `localStorage`, with a fallback to the user's system preference
+- Reusable custom components (`ProfileCard`, `ThemeToggle`) and a custom `useTheme` hook
+- All personal details stored in a single `profile` object, so the content is easy to update
+- Social links with empty values hidden automatically
+- Responsive layout that works on mobile and desktop
+
+---
+
+**What I learned in this section:**
+
+- Why React is worth using for building user interfaces
+- Setting up a new React project with Vite and installing NPM packages
+- Writing JSX to describe the UI and render dynamic data
+- Building and reusing custom components to structure an app
+
+---
+
+# Live Demo
+
+[Link](https://gkdigitalbusinesscard.netlify.app/)
